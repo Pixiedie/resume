@@ -1,7 +1,5 @@
 import {
-  AcademicCapIcon,
   ArrowDownTrayIcon,
-  BuildingOffice2Icon,
   CalendarIcon,
   FlagIcon,
   MapIcon,
@@ -13,7 +11,6 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -26,6 +23,7 @@ import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
+import heroImage from '../images/test.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -44,8 +42,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Luzi Emilie',
+  description: "Cv de luzi emilie, developpeuse web depuis 2010",
 };
 
 /**
@@ -69,13 +67,12 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Luzi Emilie développeuse`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        Actuellement <strong className="text-stone-100">Lead front end</strong>,
+        chez <strong className="text-stone-100">Masteos</strong> sur les techno ReactJS / ReactNative / NodeJS
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
@@ -104,16 +101,17 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Je suis à la recherche d'un poste de Développeur Frontend React ou Full Stack React/PHP ou Node.js. 
+  J'aspire à rejoindre une société à taille humaine où les développeurs sont inclus à tous les niveaux du processus de livraison. 
+  Je suis passionné par la création d'interfaces utilisateur conviviales et réactives, tout en veillant à maintenir un code propre et bien structuré (hook, tests unitaires, etc).
+  Je suis également à l'aise avec les méthodologies agiles, et je suis capable de travailler en équipe de manière collaborative, en apportant des idées et en contribuant au succès du projet`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    { label: 'Localisation', text: 'Région Parisienne', Icon: MapIcon },
+    { label: 'Age', text: '35', Icon: CalendarIcon },
+    { label: 'Nationnalité', text: 'Française', Icon: FlagIcon },
+    { label: 'Intéret', text: 'Lecture, Series TV', Icon: SparklesIcon },
+    // { label: 'Etude', text: 'University of Victoria', Icon: AcademicCapIcon },
+    // { label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -365,9 +363,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx' },
+  { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/' },
+  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/' },
+  { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx' },
 ];
